@@ -1,0 +1,114 @@
+/*
+ * TODO: comment this program
+ */
+
+import stanford.karel.*;
+import sun.java2d.pipe.LoopBasedPipe;
+
+public class Sorter2 extends SuperKarel {
+	boolean loop = true;
+	
+	public void run() {
+		while (beepersPresent())
+			move();
+		turnAround();
+		move();
+		turnRight();
+		pickupRow();
+		putBeeper();
+		turnRight();
+		pickupRows();
+		turnAround();
+		moveBeeper();//moves to the left behind beeper
+		while (beepersInBag()) {
+			putRow();
+		}
+	}
+	
+	public void moveWall() { //moves to the wall
+		while (frontIsClear())
+			move();
+	}
+	
+	public void moveBeeper() {
+		if (noBeepersPresent()) {
+			while (noBeepersPresent())
+				move();
+		}
+		while(beepersPresent())
+			move();
+		turnAround();
+		move();
+		turnAround();
+	}
+	
+	public void putBeeperIfCan() {
+		if (noBeepersPresent())
+			putBeeper();
+	}
+	
+	public void pickupRows(){
+		while (loop==true) {//picks up all beepers
+			move();
+			turnRight();
+			pickupRow();
+			turnRight();
+			if (frontIsBlocked())
+				return;
+		}
+	}
+	
+	public void pickupRow() {
+		while (frontIsClear()) {
+			if (beepersPresent())
+				pickBeeper();
+			move();
+		}
+		turnAround();
+		moveWall();
+	}
+	
+	public void putRow() {
+		turnLeft();
+		moveBeeper();
+		turnAround();
+		//turnRight();
+		if (frontIsBlocked()) {
+			turnRight();
+			while (frontIsClear()) {
+				move();
+				putBeeperIfCan();
+			}
+			putBeeperIfCan();
+			turnAround();
+			moveBeeper();
+			turnLeft();
+			move();
+			putBeeperIfCan();
+			turnAround();
+			moveWall();
+			turnLeft();
+		}
+		else {
+			turnRight();
+			while (loop==true) {
+				turnLeft();
+				move();
+				if (noBeepersPresent())
+					return;
+				turnAround();
+				move();
+				turnLeft();
+				if (rightIsBlocked()())
+					return;
+/*				move();
+				turnAround();
+				move();*/
+				putBeeperIfCan();
+				//turnAround();
+				move();
+			}
+		}
+	}
+
+}

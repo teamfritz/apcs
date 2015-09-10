@@ -1,0 +1,44 @@
+/*
+ * TODO: comment this program
+ */
+
+import stanford.karel.*;
+
+public class Sorter extends SuperKarel {
+	
+	public void run() {
+		turnAround();
+		moveWall();
+		turnLeft(); //puts the bot in a corner facing the correct direction
+		moveWall();
+		turnLeft();
+		int x = 0,y = 0;
+		while (frontIsClear()) { //calculates width
+			move();
+			x++;
+		}
+		turnLeft();
+		while (frontIsClear()) { //calculates height
+			move();
+			y++;
+		}
+		x = x/2;
+		y = y/2;
+		turnLeft();
+		for (int i = 0; i < x; i++) { //moves to center x-axis
+			move();
+		}
+		turnLeft();
+		for (int i = 0; i < y; i++) { //move to center y-axis
+			move();
+		}
+		putBeeper();
+	}
+	
+	public void moveWall() { //moves to the wall
+		while (frontIsClear()) {
+			move();
+		}
+	}
+
+}

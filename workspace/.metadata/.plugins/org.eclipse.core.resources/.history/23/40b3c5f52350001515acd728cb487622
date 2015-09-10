@@ -1,0 +1,43 @@
+/*
+ * TODO: comment this program
+ */
+
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+import stanford.karel.*;
+
+public class Mazefinder extends SuperKarel {
+	int i = 1;
+	// TODO: write the code to implement this program
+
+	public void run() {
+		while(i==1) {
+			checkMove();
+			if(cornerColorIs(RED)||beepersPresent()||cornerColorIs(BLACK)) {//stops at a beeper *or* a red or black tile
+				return; //ends the program
+			}
+		}
+
+	}
+	
+	public void checkRight() { //keeps Karel following the RIGHT wall
+		if(rightIsClear()) {
+			turnRight();
+		}
+	}
+	
+	
+	public void moveIfPossible() { //Keeps Karel from running into a wall
+		if(frontIsClear()) {
+			move();
+		}
+		else {
+			turnLeft(); //if it can't move then it turns left
+		}
+	}
+	
+	public void checkMove() { //combines checkRight and miveIfPossible
+		checkRight();
+		moveIfPossible();
+	}
+}

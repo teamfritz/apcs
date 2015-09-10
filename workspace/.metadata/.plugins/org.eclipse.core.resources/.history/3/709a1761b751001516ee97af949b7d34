@@ -1,0 +1,74 @@
+/*
+ * TODO: comment this program
+ */
+
+import stanford.karel.*;
+
+public class Sorter extends SuperKarel {
+	int test = 1;
+	public void run() {
+		while (beepersPresent())
+			move();
+		turnAround();
+		move();
+		turnRight();
+		pickupRow();
+		putBeeper();
+		while (test == 1) {//picks up all beepers
+			turnRight();
+			move();
+			turnRight();
+			pickupRow();
+			turnRight();
+			if (frontIsBlocked())
+				test=0;
+			turnLeft();
+		}
+		test = 1;
+		turnLeft();
+		moveBeeper();//goes to the left behind beeper
+		
+		while (test == 1) {
+			turnLeft();
+			move();
+			putBeeperIfCan();
+			turnAround();
+			move();
+			turnRight();
+			while (beepersPresent()&&frontIsClear()) {
+				move();//moves to the end of the row
+			}
+			if (frontIsBlocked())
+				test = 0;
+			putBeeperIfCan();
+			turnAround();
+			move();
+		}
+		
+	}
+	
+	public void pickupRow() {
+		while (frontIsClear()) {
+			if (beepersPresent())
+				pickBeeper();
+			move();
+		}
+		turnAround();
+		moveWall();
+	}
+	
+	public void moveWall() {
+		while (frontIsClear())
+			move();
+	}
+	
+	public void moveBeeper() {
+		while (noBeepersPresent())
+			move();
+	}
+	
+	public void putBeeperIfCan() {
+		if (noBeepersPresent())
+			putBeeper();
+	}
+}

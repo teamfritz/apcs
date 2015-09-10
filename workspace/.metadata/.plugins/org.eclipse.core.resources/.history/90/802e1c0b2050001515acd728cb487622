@@ -1,0 +1,56 @@
+/*
+ * TODO: comment this program
+ */
+
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+import stanford.karel.*;
+
+public class Mazefinder extends SuperKarel {
+	int placeBeeper = 1;
+	// TODO: write the code to implement this program
+
+	public void run() {
+		int loop = 1;
+		while (loop >= 1) {
+			checkers(100000);
+			if (leftIsBlocked()) {
+				return;
+			}
+			turnLeft();
+			checkers(1);
+			turnLeft();
+			checkers(100000);
+			if (rightIsBlocked()) {
+				return;
+			}
+			turnRight();
+			checkers(1);
+			turnRight();
+		}
+	}
+	
+	public void checkers(int distance) {
+		int loop = 0;
+		while (loop<distance) {
+			if (frontIsBlocked()) {
+				return;//checks if it has gotten to the end of the row. if so it exits the method
+			}
+			else if (placeBeeper==1) {//alternates beeper placement
+				putBeeper();
+				if (frontIsClear()) {
+					move();
+				}
+				placeBeeper = 0;
+			}
+			else if (placeBeeper==0) {
+				if (frontIsClear()) {
+					move();
+				}
+				placeBeeper = 1;
+			}
+			loop++;
+		}
+	}
+
+}
