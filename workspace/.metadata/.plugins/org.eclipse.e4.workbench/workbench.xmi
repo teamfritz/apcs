@@ -259,7 +259,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_EichoFc3EeWJJeEuzUrD0A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="randomizer.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;randomizer.java&quot; partName=&quot;randomizer.java&quot; title=&quot;randomizer.java&quot; tooltip=&quot;Assignment 1/src/randomizer.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Assignment 1/src/randomizer.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;725&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;randomizer.java&quot; partName=&quot;randomizer.java&quot; title=&quot;randomizer.java&quot; tooltip=&quot;Assignment 1/src/randomizer.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Assignment 1/src/randomizer.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;17&quot; selectionOffset=&quot;99&quot; selectionTopPixel=&quot;78&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -586,7 +586,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EiciSlc3EeWJJeEuzUrD0A" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0BiVx1jCEeW0roXqTcRLgA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Eicpq1c3EeWJJeEuzUrD0A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_uF4n91jIEeWx1vGzmFdaVA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Eicpq1c3EeWJJeEuzUrD0A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EiciWFc3EeWJJeEuzUrD0A" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -613,7 +613,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Eicivlc3EeWJJeEuzUrD0A" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0BiV0VjCEeW0roXqTcRLgA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_EicpJVc3EeWJJeEuzUrD0A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_uGBx5FjIEeWx1vGzmFdaVA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_EicpJVc3EeWJJeEuzUrD0A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EiciyVc3EeWJJeEuzUrD0A" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
