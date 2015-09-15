@@ -1,0 +1,24 @@
+package helloworld;
+
+public class helloworld {
+
+	public static void main(String[] args) {
+		System.out.println(“ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒdƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒƒƒƒƒƒƒoƒƒƒƒƒlƒƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒƒƒƒƒƒlƒƒƒƒƒrƒƒƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒƒƒƒƒƒƒlƒƒƒƒƒoƒƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒƒƒƒƒƒeƒƒƒƒƒWƒƒƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒƒƒƒƒHƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxxxxxxxxxxxxxxxxxƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxƒƒƒƒƒƒƒƒƒƒƒƒxƒƒƒxƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxƒƒƒƒJavaƒƒƒƒxƒƒƒxƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxƒƒƒƒƒƒƒƒƒƒƒƒxxxxƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxƒƒƒisƒhot!ƒƒxƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxƒƒƒƒƒƒƒƒƒƒƒƒxƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxƒƒƒƒƒƒƒƒƒƒƒƒxƒƒƒƒƒƒƒƒƒ“);
+		System.out.println(“ƒƒƒƒxxxxxxxxxxxxxxƒƒƒƒƒƒƒƒƒ“);
+		// TODO Auto-generated method stub
+
+	}
+
+}

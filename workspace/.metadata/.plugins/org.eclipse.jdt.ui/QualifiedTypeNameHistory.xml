@@ -5,4 +5,7 @@
 <fullyQualifiedTypeName name="javax.swing.colorchooser.ColorSelectionModel"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="sun.java2d.pipe.LoopBasedPipe"/>
+<fullyQualifiedTypeName name="helloworld.helloworld"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
