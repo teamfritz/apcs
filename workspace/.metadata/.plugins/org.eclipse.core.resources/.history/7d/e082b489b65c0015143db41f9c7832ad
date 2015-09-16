@@ -22,10 +22,10 @@ public class tempurature {
 		System.out.println("Please enter the current temperature");
 		input = read.nextDouble();
 		if(type==1) {
-			output = input*1.8+32.0;
+			output = input*1.8+32;
 		}
 		else {
-			output = (input-32.0)/1.8;
+			output = (input-32)/1.8;
 		}
 		System.out.println("The tempuratur converstion is");
 		System.out.print(output);

@@ -28,6 +28,7 @@ public class tempurature {
 			output = (input-32.0)/1.8;
 		}
 		System.out.println("The tempuratur converstion is");
+		System.out.println((char)27 + "[31Blue text with yellow background");
 		System.out.print(output);
 	}
 
