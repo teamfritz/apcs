@@ -9,7 +9,7 @@ public class Four {
 		min = min*60;   //60 minutes in an hour
 		System.out.print("There are ");
 		System.out.print(min);
-		System.out.print(" minutes in a year.");
+		System.out.print(" in a year.");
 	}
 
 }
