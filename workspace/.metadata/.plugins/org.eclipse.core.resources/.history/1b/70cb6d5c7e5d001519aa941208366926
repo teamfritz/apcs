@@ -1,0 +1,22 @@
+package chapterTwoProjects;
+
+import java.util.Scanner;
+
+public class Three {
+
+	public static void main(String[] args) {
+		double kilo = 0, mile = 0;
+		boolean valid = false; //used to make sure the input is positive
+		Scanner read = new Scanner(System.in);
+		System.out.println("Kilometers to nautical miles converter");
+		while( valid == false) {
+			System.out.println("Please enter amount of kilometers");
+			kilo = read.nextDouble();
+			if(kilo >= 0)
+				valid = true;
+			else
+				System.out.println("ERROR input must 0 or greater");
+		}	
+	}
+
+}

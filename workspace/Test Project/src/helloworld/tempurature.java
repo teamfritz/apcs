@@ -8,6 +8,7 @@ public class tempurature {
 	public static void main(String[] args) {
 		double input = 0, output = 0, type = 0;
 		boolean valid = false;
+		@SuppressWarnings("resource")
 		Scanner read = new Scanner(System.in);
 		while(valid == false) {
 			System.out.println("Would you like to go from celcius to farenheit [1] or ftom farenheit to celcius [2]");
