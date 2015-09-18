@@ -1,0 +1,36 @@
+package GUI;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.Panel;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class gui1 {
+	public static void main(String[] args){
+		JFrame GUI = new JFrame();
+		GUI.setTitle("Test GUI");
+		GUI.setSize(1200, 700);
+		GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		GUI.setVisible(true);
+		JPanel leftPanel = new JPanel();
+		leftPanel.setBackground(Color.red);
+		JPanel rightPanel = new JPanel();
+		rightPanel.setBackground(Color.red);
+		JPanel southPanel = new JPanel();
+		southPanel.setBackground(Color.yellow);
+		JPanel northPanel = new JPanel();
+		northPanel.setBackground(Color.yellow);
+		Container view = GUI.getContentPane();
+		//view.setLayout(new GridLayout(2,2));
+		view.add(leftPanel, BorderLayout.WEST);
+		view.add(rightPanel, BorderLayout.EAST);
+		view.add(northPanel, BorderLayout.NORTH);
+		view.add(southPanel, BorderLayout.SOUTH);
+		GUI.setVisible(true);
+	}
+
+}

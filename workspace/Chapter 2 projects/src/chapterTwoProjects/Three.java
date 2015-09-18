@@ -17,8 +17,8 @@ public class Three {
 			else
 				System.out.println("ERROR input must 0 or greater");
 		}
-		mile = kilo*10000.0;
-		mile = mile/(90*60);
+		mile = kilo/10000.0;
+		mile = mile*(90*60);
 		System.out.print(kilo);
 		System.out.println(" kilometers is equal to ");
 		System.out.print(mile);
