@@ -20,8 +20,8 @@ public class current {
 	}
 
 	public static double prompt(String type) {    //allows you to prompt for a value with a pseudo-customized message
-		Scanner read = new Scanner(System.in);    //usage: <variable> = prompt(<type>)
-		System.out.println("Please input the " + type);
+		Scanner read = new Scanner(System.in);
+		System.out.println("Please imput the " + type);
 		double output = read.nextDouble();
 		return output; //returns a double value
 	}
