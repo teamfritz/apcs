@@ -15,7 +15,8 @@ public class Three {
 			if(kilo >= 0)
 				valid = true; //Exits loop if input is 0+
 			else
-				System.out.println("ERROR input must 0 or greater");
+				//System.out.println("ERROR input must 0 or greater");
+				valid = true; //temporarily modified to disable this feature. Uncomment above line and remove this line to re-enable
 		}
 		mile = kilo/10000.0;
 		mile = mile*(90*60);
