@@ -13,7 +13,7 @@ public class Six {
 		GUI.setTitle("Program");
 		GUI.setSize(1000, 800);
 		GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		colorpanel panel = new colorpanel(Color.WHITE);
+		ColorModel panel = new ColorModel(Color.WHITE);
 		Container pane = GUI.getContentPane();
 		pane.add(panel);
 		GUI.setVisible(true);
