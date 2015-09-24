@@ -17,7 +17,7 @@ public class Three {
 		mass = output;
 		moment = mass*velo;
 		String momentumValue = String.valueOf(moment);
-		System.out.println("The momentum in kilogram*meters per second is " +momentumValue);
+		System.out.println("The momentum in kilogram*meters per second it " +momentumValue);
 		System.out.print("The kinetic energy is ");
 		ke = velo*moment/2;
 		System.out.println(ke);
