@@ -18,7 +18,7 @@ public class Five {
 			total += (regH*wage) + (overH*1.5*wage);
 		}
 		ezprint("----------------------------------------------------");
-		ezprint("  Your total money earned is $", false);
+		ezprint("Your total money earned is $", false);
 		ezprint(total, false);
 		ezprint(" Over ", false);
 		ezprint(days - 1, false);

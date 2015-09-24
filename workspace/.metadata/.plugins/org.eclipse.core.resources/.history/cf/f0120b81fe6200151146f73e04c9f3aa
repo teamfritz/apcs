@@ -17,13 +17,11 @@ public class Five {
 			overH = prompt("your overtime hours worked for day " + day);
 			total += (regH*wage) + (overH*1.5*wage);
 		}
-		ezprint("----------------------------------------------------");
-		ezprint("  Your total money earned is $", false);
+		ezprint("Your total money earned is $", false);
 		ezprint(total, false);
 		ezprint(" Over ", false);
 		ezprint(days - 1, false);
-		ezprint(" days");
-		ezprint("----------------------------------------------------");
+		ezprint(" days", false);
 	}
 	
 	public static void ezprint(String statement) {
