@@ -7,21 +7,18 @@ public class Five {
 	public static double wage, regH, overH, total = 0.0;
 
 	public static void main(String[] args) {
-		ezprint("Weekly salary calculator version 2.3");
+		ezprint("Weekly salary calculator version 2.2");
 		int days = (int) prompt("your working days in the week");
 		days++;
 		wage = prompt("your wage");
 		for (int i = 1; i < days; i++) {
 			String day = String.valueOf(i);
 			regH = prompt("your regular hours worked for day " + day);
-			overH = prompt("your overtime hours worked for day " + day);
+			overH = prompt("your overtime hours worked for day" + day);
 			total += (regH*wage) + (overH*1.5*wage);
 		}
-		ezprint("Your total money earned is $", false);
-		ezprint(total, false);
-		ezprint(" Over ", false);
-		ezprint(days, false);
-		ezprint(" days", false);
+		ezprint("Total money earned is $", false);
+		ezprint(total);
 	}
 	
 	public static void ezprint(String statement) {

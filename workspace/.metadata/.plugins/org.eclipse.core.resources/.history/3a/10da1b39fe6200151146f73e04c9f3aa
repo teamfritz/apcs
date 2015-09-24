@@ -7,7 +7,7 @@ public class Five {
 	public static double wage, regH, overH, total = 0.0;
 
 	public static void main(String[] args) {
-		ezprint("Weekly salary calculator version 2.3");
+		ezprint("Weekly salary calculator version 2.2");
 		int days = (int) prompt("your working days in the week");
 		days++;
 		wage = prompt("your wage");
