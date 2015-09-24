@@ -1,11 +1,21 @@
-package Template;
+package chapterThreeProjects;
 
 import java.util.Scanner;
 
-public class current {
+public class Five {
+	
+	public static double wage, regH, overH, total = 0.0;
 
 	public static void main(String[] args) {
-		
+		ezprint("Weekly salary calculator version 1.0");
+		wage = prompt("your wage");
+		for (int i = 0; i < 5; i++) {
+			regH = prompt("your regular hours worked");
+			overH = prompt("your overtime hours worked");
+			total += (regH*wage) + (overH*1.5*wage);
+		}
+		ezprint("Total money earned is $", false);
+		ezprint(total);
 	}
 	
 	public static void ezprint(String statement) {
