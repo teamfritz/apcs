@@ -20,7 +20,7 @@ public class Five {
 		ezprint("----------------------------------------------------");
 		ezprint("  Your total money earned is $", false);
 		ezprint(total, false);
-		ezprint(" over ", false);
+		ezprint(" Over ", false);
 		ezprint(days - 1, false);
 		ezprint(" days");
 		ezprint("----------------------------------------------------");
