@@ -1,0 +1,11 @@
+package GUI2;
+
+import java.awt.Color;
+
+public class cPanel {
+
+	public cPanel(Color background) {
+		setBackground(background);
+	}
+
+}

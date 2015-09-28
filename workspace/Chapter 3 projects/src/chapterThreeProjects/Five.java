@@ -22,7 +22,7 @@ public class Five {
 		ezprint(total, false);
 		ezprint(" over ", false);
 		ezprint(days - 1, false);
-		ezprint(" days");
+		ezprint(" days!");
 		ezprint("----------------------------------------------------");
 	}
 	
