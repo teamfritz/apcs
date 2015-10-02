@@ -1,6 +1,5 @@
 package Projects;
 
-import java.nio.channels.Pipe;
 import java.util.Scanner;
 
 public class five {
@@ -8,24 +7,17 @@ public class five {
 public static void main(String[] args) {
 		ezprint("Pi calculator");
 		double pi = 0;
-		double iterate = prompt("how accurate you want PI to  be");
-		if (iterate >= 25) {
-			ezprint("This is a large amount, are you sure you want to do this?");
-			ezprint("It could slow down your computer (y/n)");
-			String response = promptForString();
-			if (response == "n") {
-				int n = 0;
-				n = 1/n;
-			}
-		}
+		double iterate = prompt("how accurate you want PI to be");
 		for (int i = 1; i < ((iterate/2)+1); i++) {
-			ezprint("Iterated a 1 time");
-			pi -= (1/(4*i-1));
+			int it = 1;
+			ezprint("\n\n\n[" + (double)i*100/(iterate) + "%] " + pi*4 + "\n\n", false);
+			pi = pi - (1.0/((4.0*i)-1.0));
 		}
-		for (int i = 1; i < ((iterate/2)); i++) {
-			ezprint("Iterated b 1 time");
-			pi += (1/(4*i-3));
+		for (int i = 1; i < ((iterate/2)+0.5); i++) {
+			ezprint("\n\n\n[" + (((double)i*(100/iterate))+50.0) + "%] " + pi*4 + "\n\n", false);
+			pi = pi + (1.0/((4.0*i)-3.0));
 		}
+		pi *=4;
 		ezprint("Pi is " + pi + " for your current accuracy");
 	}
 	
