@@ -6,7 +6,7 @@ public class eight {
 	static boolean x = true;
 
 public static void main(String[] args) {
-		ezprint("Powers of 2 calculator");
+		ezprint("Powers calculator");
 		double base = prompt("the base");
 		ezprint("You have chosen base " + base);
 		while (x) {
