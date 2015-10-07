@@ -36,10 +36,4 @@ public class current {
 		double output = read.nextDouble();
 		return output; //returns a double value
 	}
-	
-	public static String promptForString(String type) {    //allows you to prompt for a value with a pseudo-customized message
-		Scanner read = new Scanner(System.in);    //usage: <variable> = prompt(<type>)
-		String output = read.nextLine();
-		return output; //returns a string
-	}
 }
