@@ -15,7 +15,6 @@ public class test2 {
 				p.setBlue(p.getBlue()*2);
 		}
 		image.draw();
-		image.saveAs();
 		reader.nextLine();
 	}
 	
