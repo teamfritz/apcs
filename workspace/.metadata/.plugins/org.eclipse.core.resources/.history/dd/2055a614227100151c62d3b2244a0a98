@@ -24,7 +24,6 @@ public class fourteen {
 			s.setValue(newval);
 			count++;
 			clip.saveAs();
-			ezprint(count);
 		}
 	}
 	

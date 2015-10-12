@@ -23,8 +23,7 @@ public class fourteen {
 			int newval = secondValue+s.getValue();
 			s.setValue(newval);
 			count++;
-			clip.saveAs();
-			ezprint(count);
+			clip.draw();
 		}
 	}
 	

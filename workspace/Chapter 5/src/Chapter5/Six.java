@@ -11,12 +11,12 @@ public class Six {
 		double factor = prompt("the desired volume factor");
 		//APSoundClip clip = new APSoundClip("C:\\Users\\APCS\\Downloads\\clip.wav");
 		APSoundClip clip = new APSoundClip("C:\\Users\\APCS\\Downloads\\Toolkits\\Toolkits\\sounds\\Test Programs\\money.wav");
-		clip.draw();
-		clip.play();
 		for (Sample s : clip) {
 			int newval = (int)(factor*s.getValue());
 			s.setValue(newval);
 		}
+		clip.draw();
+		clip.play();
 	}
 	
 	public static void ezprint(String statement) {

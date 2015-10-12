@@ -10,11 +10,10 @@ public class fourteen {
 	public static void main(String[] args) {
 		double delay = prompt("the desired delay");
 		APSoundClip clip = new APSoundClip("C:\\Users\\APCS\\Downloads\\Toolkits\\Toolkits\\sounds\\Test Programs\\money.wav");
-		APSoundClip clip2 = clip.clone();
 		for (Sample s : clip) {
 			int count = 1;
-			int secondValue = 0;
-			for (Sample y : clip2) {
+			int secondValue;
+			for (Sample y : clip) {
 				int count2 = 1;
 				if (count2==count+delay)
 					secondValue = y.getValue();
@@ -23,20 +22,9 @@ public class fourteen {
 			int newval = secondValue+s.getValue();
 			s.setValue(newval);
 			count++;
-			clip.saveAs();
-			ezprint(count);
+			clip.draw();
 		}
 	}
-	
-	/*public secondValue( int c, int d) {
-		APSoundClip clip = new APSoundClip("C:\\Users\\APCS\\Downloads\\Toolkits\\Toolkits\\sounds\\Test Programs\\money.wav");
-		for (Sample y : clip) {
-			int count2 = 1;
-			if (count2==c+d)
-				int secondValue = y.getValue();
-			count2++;
-		}
-	}*/
 	
 	public static void ezprint(String statement) {
 		System.out.println(statement);
