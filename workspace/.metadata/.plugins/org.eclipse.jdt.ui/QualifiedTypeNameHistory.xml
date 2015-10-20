@@ -41,4 +41,5 @@
 <fullyQualifiedTypeName name="javax.security.auth.x500.X500Principal"/>
 <fullyQualifiedTypeName name="sounds.Sample"/>
 <fullyQualifiedTypeName name="Chapter5.fourteen"/>
+<fullyQualifiedTypeName name="projects.Student"/>
 </qualifiedTypeNameHistroy>

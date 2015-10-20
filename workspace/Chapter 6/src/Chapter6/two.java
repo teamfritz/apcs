@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class two {
 
 	public static void main(String[] args) {
-		
+		stude
 	}
 	
 	public static void ezprint(String statement) {
