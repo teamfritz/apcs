@@ -5,14 +5,7 @@ import java.util.Scanner;
 public class five {
 	
 	public static void main(String[] args) {
-		bank test1 = new bank("Alex", 100);
-		ezprint(test1.toString());
-		test1.deposit(50.0);
-		ezprint(test1.toString());
-		test1.withdraw(170);
-		ezprint(test1.toString());
-		test1.withdraw(120);
-		ezprint(test1.toString());
+		
 	}
 	
 	public static void ezprint(String statement) {
