@@ -10,13 +10,7 @@ public static void main(String[] args) {
 		int width = length*5+1;
 		if (length > 31 && length <= 500) {
 			ezprint("\n\n\n\n*******************************\nWarning: Formatting will be off\n*******************************");
-			ezprint("Press enter to continue anyway.");
-			Scanner reader = new Scanner(System.in);
-			String validate = reader.nextLine();
-		}
-		if (length < 6) {
-			ezprint("\n\n\n\n******************************\nWarning: Title will not appear\n******************************");
-			ezprint("Press enter to continue anyway.");
+			ezprint("Press enter to continue.");
 			Scanner reader = new Scanner(System.in);
 			String validate = reader.nextLine();
 		}

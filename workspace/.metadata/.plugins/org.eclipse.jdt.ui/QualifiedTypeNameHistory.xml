@@ -33,7 +33,6 @@
 <fullyQualifiedTypeName name="images.Pixel"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="images.APImage"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="sounds.APSoundClip"/>
 <fullyQualifiedTypeName name="java.util.concurrent.Delayed"/>
 <fullyQualifiedTypeName name="javax.security.auth.x500.X500Principal"/>
@@ -42,7 +41,10 @@
 <fullyQualifiedTypeName name="projects.Student"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.PRIVATE_MEMBER"/>
 <fullyQualifiedTypeName name="projects.fraction"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="projects.bank"/>
+<fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterMessageFromOperator"/>
+<fullyQualifiedTypeName name="javax.security.auth.kerberos.KerberosKey"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
