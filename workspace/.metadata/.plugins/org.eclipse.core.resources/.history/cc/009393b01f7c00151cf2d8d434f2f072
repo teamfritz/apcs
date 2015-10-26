@@ -6,9 +6,8 @@ public class MultiplicationTable {
 	
 public static void main(String[] args) {
 		int length = (int)prompt(" how many rows and colums you want. Maximum 31 for formatting to work.\nYou can do more, but the formatting will be off.\nMinimum 6 for title to appear.\nOverall maximum 500 to prevent too much lag");
-		int fancy;
 		while (true) {
-			fancy = (int)prompt("1 for a fancy chart with lines. 2 For  a fancy chart with stars. 0 for a boring chart. (1 is recommended)");
+			int fancy = (int)prompt("1 for a fancy chart with lines. 2 For  a fancy chart with stars. 0 for a boring chart. (1 is recommended)");
 			if (fancy >= 0 && fancy <= 2)
 				break;
 			else 
