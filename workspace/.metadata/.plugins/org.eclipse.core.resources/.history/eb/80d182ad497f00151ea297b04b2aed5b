@@ -11,17 +11,14 @@ public class Five {
 			a = b;
 			b = temp;
 		}
-		ezprint(a + ", " + b);
 		int remainder = a%b;
 		ezprint("Remainder: " + remainder);
 		while(!(remainder == 0)) {
 			a = b;
 			b = remainder;
-			ezprint(a + ", " + b);
 			remainder = a%b;
-			ezprint("Remainder: " + remainder);
 		}
-		ezprint("The GCD is " + b);
+		ezprint("The GCD is " + a);
 	}
 	
 	public static void ezprint(String statement) {

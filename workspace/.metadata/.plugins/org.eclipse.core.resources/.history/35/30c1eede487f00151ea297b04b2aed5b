@@ -4,24 +4,7 @@ import java.util.Scanner;
 
 public class Five {
 	public static void main(String[] args) {
-		int a = (int) prompt("the first number");
-		int b = (int) prompt("the second number");
-		if (b > a) { //sets a to be the larger number
-			int temp = a;
-			a = b;
-			b = temp;
-		}
-		ezprint(a + ", " + b);
-		int remainder = a%b;
-		ezprint("Remainder: " + remainder);
-		while(!(remainder == 0)) {
-			a = b;
-			b = remainder;
-			ezprint(a + ", " + b);
-			remainder = a%b;
-			ezprint("Remainder: " + remainder);
-		}
-		ezprint("The GCD is " + b);
+		
 	}
 	
 	public static void ezprint(String statement) {
