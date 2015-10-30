@@ -15,20 +15,32 @@ public class Two {
 			number = (int) prompt("the number you would like the computer to guess [1-100]");
 		}
 		ezprint("In what way do you want the computer to guess your number?");
-		while (!(way ==1) && !(way ==2)) {
+		/*while (!(way ==1) && !(way ==2)) {
 			way = (int) prompt("1 for the most efficient way.\nPlease input 2 for a touch of randomness.");
-		}
+		}*/
+		way = 1;
 		while (correct == false && way == 1) {
-			int guess = (int) (guessFrom + (100/(guesses + Math.pow(2, guesses+1))));
+			int guess = (int) (guessFrom + (100/(Math.pow(2, guesses+1))));
+			if (guess > number) {
+				if (guess == guessFrom)
+					guessFrom--;
+			}
+			else if (guess < number) {
+				if (guess == guessFrom)
+					guessFrom++;
+			}
+			guess = (int) (guessFrom + (100/(Math.pow(2, guesses+1))));
 			ezprint(guess);
-			if (guess > number)
+			if (guess > number) {
 				ezprint("Too high.");
+			}
 			else if (guess < number) {
 				ezprint("Too low");
 				guessFrom += (int)(100/(Math.pow(2, guesses+1)));
 			}
 			else
 				correct = true;
+			ezprint("Debug [guessFrom] = " + guessFrom);
 			guesses++;
 		}
 		ezprint("The computer guessed the number " + number + " in " + guesses + " guesses!");

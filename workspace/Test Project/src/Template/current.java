@@ -36,4 +36,17 @@ public class current {
 		double output = read.nextDouble();
 		return output; //returns a double value
 	}
+	
+	public static double prompt(String type, double min, double max) {    //allows you to prompt for a value with a pseudo-customized message
+		Scanner read = new Scanner(System.in);    //usage: <variable> = prompt(<type>)
+		double output;
+		while (true) {
+			System.out.println("Please input " + type);
+			output = read.nextDouble();
+			if (output >= min && output <= max)
+				break;
+			System.out.println("I'm sorry, that is not a valid input. It must be within the range [" + min + "-" + max + "]");
+		}
+		return output; //returns a double value
+	}
 }
