@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Seven {
 	public static void main(String[] args) {
 		int width = 0, height = 0;
+		
 		for (height = 0; height <= 10; height++) {
 			for (width = 0; width<= 10; width++) {
 				if (height+width < 10) {
