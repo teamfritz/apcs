@@ -44,7 +44,7 @@ public class Magpie2
 		else if (statement.indexOf("why") >= 0
 				|| statement.indexOf("how") >= 0)
 		{
-			response = randomChoose("The universe has many wonders", "You should know the answer", "That is a wonder!", "Just 'cause");
+			response = randomChoose("The universe has many wonders", "You should know the answer", "That is a wonder!");
 		}
 		else if (statement.indexOf("Mr. Gehringer") >= 0)
 		{
