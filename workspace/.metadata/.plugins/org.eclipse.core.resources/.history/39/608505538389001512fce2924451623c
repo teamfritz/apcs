@@ -32,7 +32,7 @@ public class Magpie2
 	{
 		String response = "";
 			statement.trim();
-		if (statement.indexOf("no") >= 0
+		if (statement.indexOf(" no ") >= 0
 				|| statement.indexOf(" no.") >= 0)
 		{
 			response = "Why so negative?";
@@ -44,7 +44,7 @@ public class Magpie2
 		else if (statement.indexOf("why") >= 0
 				|| statement.indexOf("how") >= 0)
 		{
-			response = randomChoose("The universe has many wonders", "You should know the answer", "That is a wonder!");
+			response = randomChoose("The universe has many wonders", "You should know the answer", "That is a wonder!", "Just 'cause");
 		}
 		else if (statement.indexOf("Mr. Gehringer") >= 0)
 		{
