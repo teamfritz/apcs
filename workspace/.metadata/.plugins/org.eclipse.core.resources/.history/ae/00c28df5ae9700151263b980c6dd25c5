@@ -1,0 +1,64 @@
+package projects;
+
+import java.util.Scanner;
+
+public class two {
+	
+	public static void main(String[] args) {
+		ezprint("Square root calculator version 1.0");
+		double number = (int) prompt("the number you would like to find the square root of");
+		int tries = (int) prompt("how many tries you would like. Limited to 10 million for computer safety reasons.", 0, 10000000);
+		double guess = 1;
+		int attempts = 0;
+		for (int i = 0; i < tries; i++) {
+			guess = (guess + number/guess)/2;
+			System.out.printf("Root approximated to %10f after %8d attempts.\n", guess, attempts);
+			if(guess*guess == number)
+				break;
+			attempts++;
+		}
+		ezprint("The square root of " + number + " is " + guess + " found after " + attempts + " attempts.");
+	}
+	
+	public static void ezprint(String statement) {
+		System.out.println(statement);
+	}
+	
+	public static void ezprint(String statement, Boolean newline) {
+		if(newline)
+			System.out.println(statement);
+		else
+			System.out.print(statement);
+	}
+	
+	public static void ezprint(double statement) {
+		System.out.println(statement);
+	}
+	
+	public static void ezprint(double statement, Boolean newline) {
+		if(newline)
+			System.out.println(statement);
+		else
+			System.out.print(statement);
+	}
+
+	public static double prompt(String type) {    //allows you to prompt for a value with a pseudo-customized message
+		Scanner read = new Scanner(System.in);    //usage: <variable> = prompt(<type>)
+		System.out.println("Please input " + type);
+		double output = read.nextDouble();
+		return output; //returns a double value
+	}
+	
+	public static double prompt(String type, double min, double max) {    //allows you to prompt for a value with a pseudo-customized message
+		Scanner read = new Scanner(System.in);    //usage: <variable> = prompt(<type>)
+		double output;
+		while (true) {
+			System.out.println("Please input " + type);
+			output = read.nextDouble();
+			if (output >= min && output <= max)
+				break;
+			System.out.println("I'm sorry, that is not a valid input. It must be within the range [" + min + "-" + max + "]");
+		}
+		return output; //returns a double value
+	}
+}
