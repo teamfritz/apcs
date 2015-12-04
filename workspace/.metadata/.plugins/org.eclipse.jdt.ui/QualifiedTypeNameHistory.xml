@@ -47,7 +47,7 @@
 <fullyQualifiedTypeName name="java.lang.Number"/>
 <fullyQualifiedTypeName name="java.awt.GraphicsDevice"/>
 <fullyQualifiedTypeName name="java.util.regex.MatchResult"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
