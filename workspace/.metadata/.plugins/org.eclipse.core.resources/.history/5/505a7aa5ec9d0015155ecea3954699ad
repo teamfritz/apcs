@@ -7,20 +7,18 @@ public class Four {
 	public static void main(String[] args) {
 		double principal = prompt("the principal");
 		ezprint("$" + principal*0.1 + " due at purchase.");
-		int month = 0;
+		int month = 1;
 		principal*=0.9;
-		double original=principal;
-		ezprint("Month|Start Bal      |Interest       |Payment        |Principal", false);
 		while (principal>0.001) {
 			double interest = 0.01*principal;
-			double payment = 0.05*original;
+			double payment = 0.05*principal;
 			double oldPrinc = principal;
 			if (payment-interest >= principal) {
 				payment = principal+interest;
 			}
 			principal = principal - (payment-interest);
 			month++;
-			System.out.printf("\n%05d|$%-14.2f|$%-14.2f|$%-14.2f|$%-14.2f", month, oldPrinc, interest, payment, principal);
+			ezprint(principal);
 		}
 	}
 	
