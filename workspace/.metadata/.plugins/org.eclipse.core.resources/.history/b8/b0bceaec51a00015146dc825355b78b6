@@ -14,7 +14,6 @@ public class five {
 		int green = (int) prompt("the green filter");
 		ezprint("Please input the file path using \\\\ for instead of \\");
 		ezprint("An example would be: C:\\\\Users\\\\APCS\\\\Documents\\\\GitHub\\\\apcs\\\\workspace\\\\Chapter 5\\\\smokey.jpg");
-		ezprint("Input Yes to use above image");
 		String input = reader.nextLine();
 		if (input.equals("yes") || input.equals("Yes")) {
 			APImage image = new APImage("C:\\Users\\APCS\\Documents\\GitHub\\apcs\\workspace\\Chapter 5\\smokey.jpg");

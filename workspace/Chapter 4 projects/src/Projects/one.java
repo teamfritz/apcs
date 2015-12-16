@@ -7,7 +7,7 @@ public class one {
 public static void main(String[] args) {
 		ezprint("Integer divider version 1.0");
 		int a = (int) prompt("the first integer");
-		int b = (int) prompt("the second integer");
+		int b = (int) prompt("the second integer to divide by");
 		if (a>=b)
 			ezprint("The answer is " + a/b + " r" + a%b);
 		else

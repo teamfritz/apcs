@@ -13,10 +13,9 @@ public class five {
 		int blue = (int) prompt("the blue filter");
 		int green = (int) prompt("the green filter");
 		ezprint("Please input the file path using \\\\ for instead of \\");
-		ezprint("An example would be: C:\\\\Users\\\\APCS\\\\Documents\\\\GitHub\\\\apcs\\\\workspace\\\\Chapter 5\\\\smokey.jpg");
-		ezprint("Input Yes to use above image");
+		ezprint("An example would be: C:\\\\Users\\\\APCS\\\\Documents\\\\GitHub\\\\apcs\\\\workspace\\\\Chapter 5\\\\\"smokey.jpg\"");
 		String input = reader.nextLine();
-		if (input.equals("yes") || input.equals("Yes")) {
+		if (input == "yes") {
 			APImage image = new APImage("C:\\Users\\APCS\\Documents\\GitHub\\apcs\\workspace\\Chapter 5\\smokey.jpg");
 			for (Pixel p: image) {
 				p.setBlue(Math.max(Math.min(p.getBlue() + blue, 255), 0));

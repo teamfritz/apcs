@@ -14,11 +14,11 @@ public static void main(String[] args) {
 		ezprint("The factorial of " + number + " is " + product);
 	}
 
-/*****************************************************
+/********************************************************************************************************************************
 20! Shows up as negative because the integer goes so high that it runs out of memory and rolls over to the lowest possible value.
 Now that it is of type "long" the number can be larger before it rolls over.
 The new maximum value is: 20
-*****************************************************/
+********************************************************************************************************************************/
 	
 	public static void ezprint(String statement) {
 		System.out.println(statement);
