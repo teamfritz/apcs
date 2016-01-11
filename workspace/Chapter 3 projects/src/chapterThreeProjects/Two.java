@@ -8,7 +8,7 @@ static double radi, diam, circ, surf, volu;
 		ezprint("Sphere wizard 1.0");
 		radi = prompt("radius");
 		ezprint("Diameter is ", false);
-		diam = radi*2;
+		diam = radi*2.0;
 		System.out.println(diam);
 		ezprint("Circumference is ", false);
 		circ = diam*3.1416;
@@ -17,7 +17,7 @@ static double radi, diam, circ, surf, volu;
 		surf = 4*3.1416*radi*radi;
 		System.out.println(surf);
 		ezprint("Volume is ", false);
-		volu = radi*radi*radi*4*3.1416/3;
+		volu = radi*radi*radi*4.0*3.1416/3.0;
 		System.out.println(volu);
 	}
 	
