@@ -5,9 +5,14 @@ import java.util.Scanner;
 public class test {
 	
 	public static void main(String[] args) {
-		int[] cow = new int[2];
-		cow[0]=1;
-		ezprint(cow[0] + cow.length);
+		int[][] cow = new int[2][5];
+		int[] cows = {0,1};
+		ezprint(cow.length);
+		ezprint(cow[0].length);
+		ezprint(cows.length);
+		for (int i : cow[3]) {
+			ezprint(i);
+		}
 	}
 	
 	public static void ezprint(String statement) {
