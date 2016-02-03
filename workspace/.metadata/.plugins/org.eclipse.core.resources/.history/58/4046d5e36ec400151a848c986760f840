@@ -1,0 +1,16 @@
+package projects;
+
+public class credit extends bankAccount{
+	private double limit;
+	public credit() {
+		balance = 0;
+		name = "";
+		limit = 10000;
+	}
+	
+	public credit(String name, double bal, double limit) {
+		this.name = name;
+		balance = bal;
+		this.limit = limit;
+	}
+}

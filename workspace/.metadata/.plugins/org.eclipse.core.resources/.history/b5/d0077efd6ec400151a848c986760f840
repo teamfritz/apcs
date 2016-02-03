@@ -1,0 +1,14 @@
+package projects;
+
+import java.util.Scanner;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		bankAccount a1 = new credit();
+		a1.deposit(100);
+		a1.applyInterest();
+		System.out.println(a1.getBalance());
+	}
+
+}

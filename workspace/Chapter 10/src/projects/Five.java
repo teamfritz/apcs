@@ -5,6 +5,91 @@ import java.util.Scanner;
 public class Five {
 	
 	public static void main(String[] args) {
+		//initialize
+		int[] list = new int[10];
+		Scanner reader = new Scanner(System.in);
+		//gather data
+		ezprint("Please input 10 numbers");
+		for (int i = 0; i < list.length; i++) {
+			list[i] = reader.nextInt();
+		}
+		int median = findMedian(list);
+		int[] modes = findFrequency(list);
+		int mode = findMode(list);
+		ezprint("The mode is " + mode);
+		ezprint("The median is " + median);
+		for (int i = 0; i < list.length; i++) {
+			ezprint(list[i] + " appeared " + modes[i] + " times.");
+		}
+	}
+	
+	public static int findMedian(int[] list) {
+		int[] larger = new int[list.length];
+		int[] smaller = new int[list.length];
+		for (int i = 0; i < smaller.length; i++) {
+			smaller[i] = 0;
+			larger [i] = 0;
+		}
+		for (int i = 0; i < list.length; i++) {
+			for (int j = 0; j < list.length; j++) {
+				if (list[i] > list[j]) {
+					larger[i]++;
+				} else if (list[i] < list[j]) {
+					smaller[i]++;
+				}
+			}
+		}
+		for (int i = 0; i < smaller.length; i++) {
+			for (int j = 0; j < smaller.length; j++) {
+				if(larger[j] == (smaller[j] + i)) {
+					return list[j];
+				}
+				if(larger[j] == (smaller[j] - i)) {
+					return list[j];
+				}
+				
+			}
+		}
+		return 0;
+	}
+	
+	public static int findMode(int[] list) {
+		int[] mode = new int[list.length];
+		for (int i = 0; i < mode.length; i++) {
+			mode[i] = 0;
+		}
+		for (int i = 0; i < list.length; i++) {
+			for (int j = 0; j < list.length; j++) {
+				if (list[i] == list[j]) {
+					mode[i]++;
+				}
+			}
+		}
+		int maxCount = 0;
+		for (int i = 0; i < mode.length; i++) {
+			maxCount = Math.max(maxCount, mode[i]);
+		}
+		for (int i = 0; i < mode.length; i++) {
+			if (mode[i] == maxCount) {
+				return list[i];
+			}
+		}
+		return 0;
+	}
+	
+	public static int[] findFrequency(int[] list) {
+		int[] mode = new int[list.length];
+		for (int i = 0; i < mode.length; i++) {
+			mode[i] = 0;
+		}
+		for (int i = 0; i < list.length; i++) {
+			for (int j = 0; j < list.length; j++) {
+				if (list[i] == list[j]) {
+					mode[i]++;
+				}
+			}
+		}
+		return mode;
 	}
 	
 	public static void ezprint(String statement) {

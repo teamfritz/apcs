@@ -1,0 +1,13 @@
+package projects;
+
+public class savings extends bankAccount{
+	public savings() {
+		balance = 0;
+		name = "";
+	}
+	
+	public savings(String name, double bal) {
+		this.name = name;
+		balance = bal;
+	}
+}
