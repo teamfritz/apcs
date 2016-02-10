@@ -807,8 +807,8 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
 	  Scanner reader = new Scanner(System.in);
 	  System.out.println("What file do you want to open up?");
 	  String file = reader.nextLine();
-	  Picture pix = new Picture(file);
-	  pix.explore();
+    Picture pix = new Picture(file);
+    pix.explore();
   }
   
 }
