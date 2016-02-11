@@ -1,0 +1,10 @@
+package projects;
+
+public class ArrayList {
+	private Object array[];
+	
+	public ArrayList(Object[] array) {
+		array = this.array;
+		array = new Object[5];
+	}
+}
