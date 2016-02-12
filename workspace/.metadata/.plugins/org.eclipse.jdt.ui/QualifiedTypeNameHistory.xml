@@ -48,13 +48,14 @@
 <fullyQualifiedTypeName name="java.util.regex.MatchResult"/>
 <fullyQualifiedTypeName name="java.io.Externalizable"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.concurrent.CountDownLatch"/>
 <fullyQualifiedTypeName name="javax.xml.transform.Source"/>
 <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="projects.ArrayList"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.OBJ_ADAPTER"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="projects.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>

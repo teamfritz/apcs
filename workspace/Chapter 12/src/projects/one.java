@@ -6,7 +6,19 @@ public class one {
 	
 	
 	public static void main(String[] args) {
-		
+		int[] array = new int[10];
+		ArrayList test = new ArrayList(10);
+		test.add(5, "hi");
+		test.add(5, "e");
+		test.add(5, "this");
+		test.add(5, "is");
+		test.add(5, "cool");
+		test.add(9, "it");
+		test.add(9, "has");
+		test.add(9, "auto");
+		test.add(9, "commas!");
+		String output = test.toString();
+		System.out.println(output);
 	}
 	
 	public static void ezprint(String statement) {
