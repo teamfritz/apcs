@@ -17,6 +17,7 @@ public class one {
 		test.add(9, "has");
 		test.add(9, "auto");
 		test.add(9, "commas!");
+		test.remove(1);
 		String output = test.toString();
 		System.out.println(output);
 	}
