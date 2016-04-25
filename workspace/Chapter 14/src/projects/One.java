@@ -1,10 +1,19 @@
 package projects;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class One {
 	public static void main(String[] args) {
 		
+	}
+	
+	public static void sort(ArrayList<Object> list) {
+		try {
+			
+		} catch (Exception e) {
+			System.out.println("bad");
+		}
 	}
 	
 	public static void ezprint(String statement) {
